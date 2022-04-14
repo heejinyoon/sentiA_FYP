@@ -26,12 +26,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hugozanini/sentiment-analysis.git"
+    "url": "git+https://github.com/heejinyoon/sentiA_FYP"
   },
-  "author": "Hugo Zanini",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hugozanini/sentiment-analysis/issues"
-  },
-  "homepage": "https://github.com/hugozanini/sentiment-analysis#readme"
+  "author": "Heejin Yoon",
+  "license": "ISC"
 }
