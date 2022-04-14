@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<style>
+  .content-box-blue,
+  .content-box-green,
+  .content-box-purple,
+  .content-box-red,
+  .content-box-yellow {
+      margin: 0 0 25px;
+      overflow: hidden;
+      padding: 20px;
+  }
+  
+  .content-box-blue {
+      background-color: #d8ecf7;
+      border: 1px solid #afcde3;
+  }
+  
+  .content-box-green {
+      background-color: #d9edc2;
+      border: 1px solid #b2ce96;
+  }
+  
+  .content-box-purple {
+      background-color: #e2e2f9;
+      border: 1px solid #bebde9;
+  }
+  
+  .content-box-red {
+      background-color: #f9dbdb;
+      border: 1px solid #e9b3b3;
+  }
+  
+  .content-box-yellow {
+      background-color: #fef5c4;
+      border: 1px solid #fadf98;
+  }
+mark {
+  background-color: #e2e2e2;
+  color: black;
+}
+</style>
+<body>
+
+    <h1>Welcome to SentiA</h1>
+    <div style="width: 100%; overflow: hidden;">
+
+      <div style="width: 300px; float: left;">
+        <label for="fname">Your Review:</label>
+        <textarea id="user_input" name="fname" rows="10" cols="50"> </textarea>
+      </div>
+      <div style="margin-top: 200px;">
+        <input type="submit" id="submit", value="Run">
+      </div>
+
+      <div style="width: 500px; float: left;">
+        <h2>How to use SentiA API?</h2>
+        <div class="content-box-blue" style="width: 100%; overflow: hidden;">1. Clone the SentiA Repo</div>
+        <div class="content-box-red" style="width: 100%; overflow: hidden;">2. Install the dependencies <br><mark>pipenv install --dev</mark> </div>
+        <div class="content-box-green" style="width: 100%; overflow: hidden;">3. Download the Pre-trained model <br><mark>bin/download_model</mark></div>
+        <div class="content-box-purple" style="width: 100%; overflow: hidden;">4. Start the HTTP server <br><mark>bin/start_server</mark></div>
+        <div class="content-box-yellow" style="width: 100%; overflow: hidden;">5. Send a test_request <br><mark>bin/test_request</mark></div>
+
+      </div>
+
+      <div style="margin-top: 40px;">
+
+        <div style="width: 100%; overflow: hidden;">
+          <h2>Result of Sentiment Analysis</h2>
+
+          <div style="width: 80px; float: left;" >
+            <img alt="" src="assets/blank.png"
+                style="height: 85px; width: 80px" id="imgClickAndChange" onclick="changeImage()"  />
+          </div>
+
+          <div style="margin-left: 100px;">
+            <div id='statistics' style="height: 85px; width: 250px"> </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+</body>
+</html>
+
