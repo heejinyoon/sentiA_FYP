@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#Going to the sentiment_analyser/api.py and referencing to the app
+uvicorn sentiA.api:app --host 0.0.0.0
